@@ -18,24 +18,26 @@
     <title>Covid 19 Api</title>
   </head>
   <body>
-    <div id="contain_chart">
+    <div id="spiner" class="spiner"></div>
+    <div id="none">
       <canvas id="myChart" style="max-width: 1000px"></canvas>
-    </div>
-    <h1></h1>
-    <div class="container_btn">
-      <button class="specific" value="total_cases">Confirmed</button>
-      <button class="specific" value="total_deaths">Deaths</button>
-      <button class="specific" value="total_recovered">Recovered</button>
-      <button class="specific" value="in_critical_condition">critical</button>
-      <select id="category"></select>
-    </div>
 
-    <div class="container_btn">
-      <button class="continent" value="americas">Americas</button>
-      <button class="continent" value="africa">Africa</button>
-      <button class="continent" value="asia">Asia</button>
-      <button class="continent" value="europe">Europe</button>
-      <button class="continent" value="oceania">Oceania</button>
+      <h1></h1>
+      <div class="container_btn">
+        <button class="specific" value="total_cases">Confirmed</button>
+        <button class="specific" value="total_deaths">Deaths</button>
+        <button class="specific" value="total_recovered">Recovered</button>
+        <button class="specific" value="in_critical_condition">critical</button>
+        <select id="category"></select>
+      </div>
+
+      <div class="container_btn">
+        <button class="continent" value="americas">Americas</button>
+        <button class="continent" value="africa">Africa</button>
+        <button class="continent" value="asia">Asia</button>
+        <button class="continent" value="europe">Europe</button>
+        <button class="continent" value="oceania">Oceania</button>
+      </div>
     </div>
     <script src="./script.js"></script>
   </body>

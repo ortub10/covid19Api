@@ -152,7 +152,7 @@ function eventButtonCcontinent(datas) {
     button.addEventListener("click", (evt) => {
       const continent = evt.target.value;
       lastContinent = continent;
-      document.querySelector("h1").innerText = continent;
+      document.querySelector("h1").innerText = evt.target.innerText;
       graph.destroy();
       fillSelect(mainData, continent, tempData);
       fillChartForContinents(mainData, continent);
@@ -221,7 +221,9 @@ function fillChartForSelect(mainData, continent, country) {
 }
 async function start() {
   const datas = await filData();
-  alert("You can start");
+  document.getElementById("spiner").removeAttribute("class");
+  document.getElementById("none").removeAttribute("id");
+  // alert("You can start");
   eventButtonCcontinent(datas);
   eventButtonSpecific(datas);
   eventSelect(datas);

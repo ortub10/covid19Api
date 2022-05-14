@@ -4,7 +4,27 @@ h1 {
 #myChart {
   margin: auto;
 }
-
+#none {
+  display: none;
+}
+.spiner {
+  border-top: 2px solid aqua;
+  border-bottom: 2px solid gray;
+  border-right: 2px solid gray;
+  border-left: 2px solid gray;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  animation: spinin 1s infinite linear;
+}
+@keyframes spinin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .container_btn {
   display: flex;
   flex-direction: column;
