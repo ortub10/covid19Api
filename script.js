@@ -223,7 +223,6 @@ async function start() {
   const datas = await filData();
   document.getElementById("spiner").removeAttribute("class");
   document.getElementById("none").removeAttribute("id");
-  // alert("You can start");
   eventButtonCcontinent(datas);
   eventButtonSpecific(datas);
   eventSelect(datas);
