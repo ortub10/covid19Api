@@ -46,7 +46,9 @@ async function filData() {
   const urls = [];
 
   for (const element of arrContinents) {
-    urls.push(`https://restcountries.herokuapp.com/api/v1/region/${element}`);
+    urls.push(
+      `https://nameless-citadel-58066.herokuapp.com/https://restcountries.herokuapp.com/api/v1/region/${element}`
+    );
   }
 
   const requests = urls.map((url) => getFetchedData(url));
